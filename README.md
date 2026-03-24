@@ -21,7 +21,7 @@ environmental variable to URL of the manifest.json file, for example
 GRIST_WIDGET_LIST_URL=https:/<your address>/manifest.json npm start
 ```
 
-# Developing
+## How to tailor your Grist plugins
 
 To run a local widget server in a watch mode, with automatic reload use:
 
