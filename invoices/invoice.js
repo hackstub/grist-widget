@@ -71,16 +71,16 @@ const data = {
 };
 let app = undefined;
 
-Vue.filter('currency', formatNumberAsUSD)
-function formatNumberAsUSD(value) {
+Vue.filter('currency', formatNumberAsEUR)
+function formatNumberAsEUR(value) {
   if (typeof value !== "number") {
     return value || '—';      // falsy value would be shown as a dash.
   }
   value = Math.round(value * 100) / 100;    // Round to nearest cent.
   value = (value === -0 ? 0 : value);       // Avoid negative zero.
 
-  const result = value.toLocaleString('en', {
-    style: 'currency', currency: 'USD'
+  const result = value.toLocaleString('fr', {
+    style: 'currency', currency: 'EUR'
   })
   if (result.includes('NaN')) {
     return value;
@@ -90,7 +90,7 @@ function formatNumberAsUSD(value) {
 
 Vue.filter('fallback', function(value, str) {
   if (!value) {
-    throw new Error("Please provide column " + str);
+    throw new Error("Remplir la ligne " + str);
   }
   return value;
 });
@@ -100,7 +100,7 @@ Vue.filter('asDate', function(value) {
     value = new Date(value * 1000);
   }
   const date = moment.utc(value)
-  return date.isValid() ? date.format('MMMM DD, YYYY') : value;
+  return date.isValid() ? date.format('DD/MM/YYYY') : value;
 });
 
 function tweakUrl(url) {
@@ -115,7 +115,7 @@ function handleError(err) {
   console.error(err);
   const target = app || data;
   target.invoice = '';
-  target.status = String(err).replace(/^Error: /, '');
+  target.status = String(err).replace(/^Erreur : /, '');
   console.log(data);
 }
 
@@ -140,14 +140,14 @@ function updateInvoice(row) {
   try {
     data.status = '';
     if (row === null) {
-      throw new Error("(No data - not on row - please add or select a row)");
+      throw new Error("(Aucune donnée - pas dans la ligne - ajouter ou sélectionner une ligne)");
     }
     console.log("GOT...", JSON.stringify(row));
     if (row.References) {
       try {
         Object.assign(row, row.References);
       } catch (err) {
-        throw new Error('Could not understand References column. ' + err);
+        throw new Error('Colonne References invalide. ' + err);
       }
     }
 
