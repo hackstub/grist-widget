@@ -37,7 +37,7 @@ a {
 }
 
 .supplier {
-  color: #4682B4;
+  color: #dc85e9;
   display: block;
 }
 
@@ -50,7 +50,7 @@ a {
   padding: 1px;
   margin-top: 1em;
   margin-bottom: 1em;
-  background: #ff8000;
+  background: #dc85e9;
   -webkit-print-color-adjust: exact !important;
   color-adjust: exact !important;
 }
@@ -68,7 +68,7 @@ a {
 
 table.items {
   width: 100%;
-  border: 1px solid #ff8000;
+  border: 1px solid #dc85e9;
   border-collapse: collapse;
 }
 
