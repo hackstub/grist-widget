@@ -4,7 +4,7 @@ A fork of the [official repository of Grist custom widgets](https://github.com/g
 ## Tailored plugins
 - [Invoices](https://hackstub.eu/gimme/grist-widget/invoices/)
 
-# Custom hosting
+## How to replicate our setup
 
 To use this repository for your own Grist instance, you need to copy all the files to
 your own hosting provider and recreate the manifest.json file used by Grist. 
