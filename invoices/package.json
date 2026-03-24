@@ -1,22 +1,22 @@
 {
-  "name": "@gristlabs/widget-invoices",
-  "description": "A template for showing an invoice in a Custom Widget in Grist.",
-  "homePage": "https://github.com/gristlabs/grist-widget",
+  "name": "@hackstub/widget-factures",
+  "description": "Un widget de facturation pour association à but non-lucratif de droit local Alsace-Moselle (France)",
+  "homePage": "https://github.com/hackstub/grist-widget",
   "version": "0.0.1",
   "grist": {
-    "name": "Invoices",
+    "name": "Factures (asso françaises non-assujetties à la TVA)",
     "url": "https://gristlabs.github.io/grist-widget/invoices",
-    "widgetId": "@gristlabs/widget-invoices",
+    "widgetId": "@hackstub/widget-factures",
     "published": true,
     "accessLevel": "read table",
     "renderAfterReady": true,
-    "description": "Generate printable invoices, with values filled in from the selected record.",
+    "description": "Génère des factures imprimables, dont les valeurs sont remplies depuis les enregistrements sélectionnés.",
     "authors": [
       {
-        "name": "Grist Labs",
-        "url": "https://github.com/gristlabs"
+        "name": "Hackstub (fork de Grist Labs)",
+        "url": "https://github.com/hackstub"
       }
     ],
-    "isGristLabsMaintained": true
+    "isGristLabsMaintained": false
   }
 }
