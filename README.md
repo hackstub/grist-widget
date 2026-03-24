@@ -1,5 +1,6 @@
 # grist-widget
-A repository of Grist custom widgets that have no back-end requirements.
+A fork of the [official repository of Grist custom widgets](https://github.com/gristlabs/grist-widget) to tailor them to the usecase of the [Hackstub](https://hackstub.eu/home), which is a **french non-profit (association de droit local Alsace-Moselle à but non-lucratif)**.
+  
 
 # Custom hosting
 
