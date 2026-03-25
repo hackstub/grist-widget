@@ -4,11 +4,20 @@ A fork of the [official repository of Grist custom widgets](https://github.com/g
 ## Tailored plugins
 - [Invoices](https://hackstub.eu/gimme/grist-widget/invoices/)
 
-## How to replicate our setup
+## How to host them
 
-To use this repository for your own Grist instance, first you need to have `yarn` installed.
-Then, to copy all the files to your own hosting provider and recreate the manifest.json file used by Grist. 
+To use this repository for your own Grist instance:
+1. you need to have `yarn` and `npm` installed.
+```bash
+sudo apt install yarn npm
+```
 
+3. to copy all the files to your own hosting provider.
+```bash
+git clone https://github.com/hackstub/grist-widget/
+```
+
+4. to recreate the manifest.json file used by Grist (in the root folder of this repo, i.e. `/var/www/grist-plugins`)
 ```bash
 yarn install
 yarn run build
