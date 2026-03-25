@@ -6,8 +6,8 @@ A fork of the [official repository of Grist custom widgets](https://github.com/g
 
 ## How to replicate our setup
 
-To use this repository for your own Grist instance, you need to copy all the files to
-your own hosting provider and recreate the manifest.json file used by Grist. 
+To use this repository for your own Grist instance, first you need to have `yarn` installed.
+Then, to copy all the files to your own hosting provider and recreate the manifest.json file used by Grist. 
 
 ```bash
 yarn install
@@ -62,5 +62,5 @@ yarn run grist:dev
 
 There are many other custom widgets than those included here. Some people maintain lists:
 
- * [Heloise Ouvry's list](https://docs.getgrist.com/9DZa7JFegUxz/GristHub)
+ * Our beloved [Heloise Ouvry's list](https://docs.getgrist.com/9DZa7JFegUxz/GristHub)
  * [Nick Bush's list](https://grist-marketing.getgrist.com/oHQcp1bG7DS8/Community-Widgets)
