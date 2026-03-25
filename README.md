@@ -1,4 +1,4 @@
-# grist-widget
+# The Hackstub's grist widgets
 A fork of the [official repository of Grist custom widgets](https://github.com/gristlabs/grist-widget) to tailor them to the usecase of the [Hackstub](https://hackstub.eu/home), which is a **french non-profit (association de droit local Alsace-Moselle à but non-lucratif)**.
 
 ## Tailored plugins
